@@ -1,0 +1,68 @@
+.outer-treatment-container {
+  display: flex;
+  border-bottom: 1px solid blue;
+  margin: 0 6rem;
+  gap: 2rem; /* Add gap between the inner containers */
+}
+
+.inner-treatment-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the left */
+  font-weight: bold;
+  opacity: 1;
+  padding: 2rem;
+}
+
+.inner-treatment-container h2 {
+  margin: 2rem 0;
+}
+
+.inner-treatment-container p {
+  font-weight: 300;
+  margin-bottom: 1rem; /* Add some space between paragraphs */
+}
+
+.inner-treatment-container img {
+  max-width: 90%;
+  height: auto; /* Maintain aspect ratio */
+  opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .outer-treatment-container {
+    flex-direction: column; /* Stack items vertically */
+    margin: 0 2rem; /* Reduce margin on smaller screens */
+  }
+
+  .inner-treatment-container {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .inner-treatment-container img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .outer-treatment-container {
+    margin: 0 1rem; /* Further reduce margin on very small screens */
+  }
+
+  .inner-treatment-container h2 {
+    font-size: 1.5rem; /* Adjust heading font size */
+  }
+
+  .inner-treatment-container p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  .inner-treatment-container img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+}

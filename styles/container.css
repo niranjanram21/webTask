@@ -1,0 +1,92 @@
+.outer-container {
+  display: flex;
+  flex-direction: row; /* Default to row layout for larger screens */
+  background: url("../assets/bgImage.jpg");
+  opacity: 0.9;
+  padding: 1rem; /* Add padding for better spacing */
+}
+
+.inner-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin: 1rem; /* Use margin for better spacing */
+  opacity: 1;
+}
+
+.inner-container img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  opacity: 1;
+}
+
+.enquireBtn {
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 0;
+  font-weight: bolder;
+  border-radius: 0;
+}
+
+.breadcrumb {
+  background-color: transparent; /* Remove background color */
+  padding: 0; /* Remove padding if needed */
+  margin-bottom: 1rem; /* Adjust margin if needed */
+  list-style: none; /* Remove default list styles */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">"; /* Customize separator */
+  padding: 0 0.5rem;
+  color: red;
+  font-weight: bolder;
+}
+
+.breadcrumb-item a {
+  opacity: 0.8;
+  color: white; /* Customize link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .outer-container {
+    flex-direction: column; /* Stack items vertically on medium screens */
+    align-items: center; /* Center align items */
+  }
+
+  .inner-container {
+    margin-left: 0; /* Reset margin for centered alignment */
+  }
+
+  .inner-container img {
+    height: auto; /* Adjust image height for responsiveness */
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 0.8rem; /* Adjust breadcrumb font size */
+  }
+
+  .enquireBtn {
+    padding: 0.4rem 1rem; /* Adjust button padding */
+    font-size: 0.9rem; /* Adjust button font size */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust heading font size */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}

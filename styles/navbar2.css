@@ -1,0 +1,47 @@
+.nav2-list-items {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row; /* Default to row layout for larger screens */
+  gap: 2rem; /* Reduced gap for better responsiveness */
+  padding: 1rem 2rem; /* Adjusted padding for better spacing */
+  font-weight: bold;
+  border-bottom: 1px solid rgb(165, 165, 165);
+  justify-content: start; /* Center items horizontally */
+}
+
+.active-nav2 {
+  border-bottom: 4px solid blue;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav2-list-items {
+    flex-direction: column; /* Stack items vertically on medium screens */
+    gap: 1rem; /* Reduce gap between items */
+    padding: 1rem; /* Adjust padding */
+    align-items: center; /* Center align items */
+  }
+
+  .nav2-list-items li {
+    width: 100%; /* Ensure items take full width */
+    text-align: center; /* Center align text */
+    border-bottom: 1px solid rgb(165, 165, 165); /* Add separator for each item */
+    padding: 0.5rem 0; /* Add padding for better spacing */
+  }
+
+  .nav2-list-items li:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav2-list-items {
+    gap: 0.5rem; /* Minimal gap on very small screens */
+    padding: 0.5rem; /* Reduce padding for very small screens */
+  }
+
+  .nav2-list-items li {
+    font-size: 0.9rem; /* Reduce font size */
+  }
+}

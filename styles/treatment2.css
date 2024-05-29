@@ -1,0 +1,277 @@
+.outer-treatment2-container {
+  display: flex;
+  margin: 0 6rem;
+  padding: 1rem 0;
+  gap: 2rem;
+}
+.inner-treatment2-container {
+  flex: 0.3;
+}
+.left-treatment-container {
+  flex: 0.7;
+  list-style: none;
+}
+.owl-carousel {
+  flex: 0.7;
+}
+.inner-treatment1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-weight: bold;
+  opacity: 1;
+  padding: 2rem;
+  border-bottom: 1px solid blue;
+}
+.inner-treatment1-container h2 {
+  margin: 2rem 0;
+}
+.inner-treatment1-container p {
+  font-weight: 300;
+}
+.inner-treatment1-container ul {
+  list-style: circle;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.inner-treatment1-container ul li::marker {
+  color: blue;
+}
+
+.card-container {
+  border-bottom: none;
+}
+
+/* accordion */
+.accordion {
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: color 0.4s ease;
+  font-size: 15px;
+  background: none; /* Remove background color */
+  display: flex;
+  align-items: center;
+}
+
+.accordion::before {
+  content: "+";
+  font-size: 20px;
+  color: rgb(78, 150, 209);
+  margin-right: 10px;
+}
+
+.accordion.active::before {
+  content: "-";
+  font-size: 20px;
+  color: rgb(78, 150, 209);
+  margin-right: 10px;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+.card {
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.card-body {
+  padding: 1rem;
+  width: 300px;
+  margin: 1rem 0;
+}
+.card-body p {
+  margin-top: 2.5rem;
+}
+.card-container a {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-image: url("../assets/profilePic.jpg");
+}
+.cardImage {
+  width: 80%;
+  height: 150px;
+  margin: 2rem 0;
+}
+
+/* form container */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  color: rgb(0, 153, 255);
+}
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, rgb(24, 193, 254), rgb(107, 213, 252));
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background: linear-gradient(to right, rgb(2, 186, 253), rgb(42, 192, 247));
+}
+
+.doctor-container {
+  padding: 2rem 8rem;
+  background-color: rgb(199, 232, 220);
+}
+/* .doctor-container img {
+  width: 300px;
+  height: 300px;
+} */
+.doctors {
+  text-align: center;
+  color: red;
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+}
+.orthoDoctors {
+  text-align: center;
+}
+.orthoDoctors::after {
+  content: " Doctors";
+  color: rgb(0, 153, 255);
+}
+.card-body-doctor {
+  border: none;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+.card-body-doctor h5 {
+  font-style: italic;
+  color: red;
+}
+
+.card-body-doctor p {
+  font-size: small;
+}
+.doctor-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hospital-container {
+  padding: 3rem 8rem;
+}
+.location {
+  color: red;
+  font-style: italic;
+}
+.hospital-card {
+  border: 2px dotted red;
+}
+.explore-hospitals {
+  text-align: center;
+  margin: 2rem;
+}
+.explore-hospitals::after {
+  content: " Explore all Hospitals";
+  color: red;
+  text-decoration: underline;
+}
+
+/* Footer */
+.getintouch {
+  background: linear-gradient(to right, rgb(22, 122, 184), rgb(109, 191, 228));
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+.getintouch div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.getintouch button {
+  background-color: rgb(0, 66, 209);
+  color: white;
+  font-weight: bolder;
+  border-radius: none;
+  padding: 0 2rem;
+}
+.contactnumber {
+  border-left: 2px solid white;
+  padding: 1rem;
+}
+
+.footer {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to right, rgb(11, 11, 11), rgb(29, 29, 29));
+  padding: 4rem;
+}
+
+.first-row {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid white;
+}
+
+.footer ul {
+  list-style: circle;
+  margin: 1rem 0;
+}
+.footer ul li::marker {
+  color: rgb(49, 156, 244);
+}
+.second-row {
+  padding: 2rem 0;
+}
+.title-row {
+  padding: 0;
+  margin-left: 1rem;
+}
+.sociallogos {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.number {
+  color: rgb(49, 156, 244);
+}
+
+.copyright {
+  background: linear-gradient(to right, rgb(22, 122, 184), rgb(109, 191, 228));
+  color: white;
+  font-weight: bolder;
+  border-radius: none;
+  padding: 1rem 2rem;
+}
